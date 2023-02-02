@@ -14,7 +14,7 @@ class ApplicationBinding extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        Provider(create: (context) => CustomDio),
+        Provider<CustomDio>(create: (context) => CustomDio()),
       ],
       child: child,
     );
